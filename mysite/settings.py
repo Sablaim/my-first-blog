@@ -25,7 +25,7 @@ SECRET_KEY = '#sv^h%*p3^fa9a02m1o8iy0$g(8e$t96clg+fx#mn@e!)=(cvn'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '<sablaim>.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'sablaim.pythonanywhere.com']
 
 
 # Application definition

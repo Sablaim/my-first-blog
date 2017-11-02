@@ -5,13 +5,11 @@
     <body>
         <div>
             <h1><a href="/">Мой первый блог</a></h1>
-        </div>
-
-
         <div>
-            <p>сегодня: 01,11,20017, 18,15</p>
-            <h2><a href="">Мой первый пост</a></h2>
-            <p>Здесь должно быть написано что-то умное.</p>
-        </div>
-    </body>
-</html>
+          {% for post in posts %}
+      <div>
+          <p>published: {{ post.published_date }}</p>
+          <h1><a href="">{{ post.title }}</a></h1>
+          <p>{{ post.text|linebreaksbr }}</p>
+      </div>
+  {% endfor %}
